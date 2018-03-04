@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>唐企律联</title>
+    <meta name="description" content="唐企律联">
+    <meta name="keywords" content="唐企律联">
+    <meta name="robots" content="all">
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-1.7.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.SuperSlide.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/common.js') }}"></script>
+</head>
+
+<body>
+    <div class="miancontainer">
+    <div class="bannertop">
+        <div id="full-screen-slider">
+            <ul id="slides"></ul>
+            <ul id="pagination" style="margin-left: -530px;"></ul>
+        </div>
+    </div>
+    <div class="navbox">
+        <ul class="nav">
+            <li><a href="" target="_blank">网站首页</a></li>
+            <li><a href="" target="_blank">法律服务</a></li>
+            <li><a href="" target="_blank">财税服务</a></li>
+            <li><a href="" target="_blank">互联网＋</a></li>
+            <li><a href="" target="_blank">金融管理</a></li>
+            <li><a href="" target="_blank">人力资源管理</a></li>
+            <li><a href="" target="_blank">企业私人定制</a></li>
+            <li><a href="" target="_blank">公益活动</a></li>
+        </ul>
+    </div>
+    <div class="searchbox">
+        <ul>
+            <li class="tb">
+                <img src="{{ url_for('static',filename='image/search_09.png') }}"/>
+            </li>
+            <form name="miniform" action="" method="get">
+                <li>
+                    <input class="search-01" type="text" name="keyword" value="请输入关键词" onclick="">
+                </li>
+                <li>
+                    <select class="select-1" name="type">
+                        <option value="">请选择搜索类型</option>
+                        <option value="2">企业推介</option>
+                        <option value="3">人物风采</option>
+                    </select>
+                </li>
+                <li><input class="button" type="submit" value="搜索"></li>
+            </form>
+            <li class="time01">
+                <script type="text/javascript">thisDay()</script>
+                今天是：2018年02月27日 星期二
+            </li>
+        </ul>
+    </div>
+    {% block contend %}
+
+    {% endblock %}
+{#    友情链接#}
+    <div class="yqljbox">
+        <div class="link">
+            <a href="" target="_blank" class="more06">
+                <img src="{{ url_for('static',filename='image/more06_46.jpg') }}">
+            </a>
+        </div>
+        <div class="link01">
+            <ul>
+                <li class="rmzfbox">
+                    <a href="" target="_blank">
+                        <img src="{{ url_for('static',filename='image/635659850267031250.jpg') }}">
+                    </a>
+                </li>
+
+                <li class="rmzfbox">
+                    <a href="" target="_blank">
+                        <img src="{{ url_for('static',filename='image/635576108900156250.jpg') }}">
+                    </a>
+                </li>
+
+                <li class="rmzfbox">
+                    <a href="" target="_blank">
+                        <img src="{{ url_for('static',filename='image/635576106403750000.jpg') }}">
+                    </a>
+                </li>
+
+                <li class="rmzfbox">
+                    <a href="" target="_blank">
+                        <img src="{{ url_for('static',filename='image/635576105115000000.jpg') }}">
+                    </a>
+                </li>
+                <li class="rmzfbox">
+                    <a href="" target="_blank">
+                        <img src="{{ url_for('static',filename='image/635576104315937500.jpg') }}">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="ft"><a href="" target="_blank">结构介绍&nbsp;|&nbsp;</a>
+        <a href="" target="_blank">新闻动态&nbsp;|&nbsp;</a>
+        <a href="" target="_blank">友情链接&nbsp;|&nbsp;</a>
+        <a href="" target="_blank">联系我们&nbsp;</a>
+    </div>
+
+    <div class="footer">
+        <p>版权所有　唐企律联 技术支持：
+            <a href="" target="_blank"></a>
+            <br>建议使用：1024*768分辨率，32位颜色、IE6.0或以上版本浏览器以获得本站最佳浏览效果
+        </p>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static',filename='image/jquery_jslides.js') }}"></script>
+    <script type="text/javascript">
+        if (document.getElementById("content_0") != null && document.getElementById("content_1") != null) {
+            if (document.getElementById("content_0").offsetHeight > 410)
+                document.getElementById("content_1").style.height = document.getElementById("content_0").offsetHeight + 40 + "px";
+        }
+    </script>
+</div>
+    <script>
+        $(".jgcdbox li").hover(function () {
+            $(this).css("color", "#b84508")
+                .children(".xzbox01").stop(true, true).show(300);
+        }, function () {
+            $(this).css("color", "#b84508")
+                .children(".xzbox01").stop(true, true).hide(100);
+        })
+    </script>
+    <div id="tesi" style="display: none;">
+        <strong style="font-weight: 400">
+            <font face="宋体" size="2">百度友情链接：
+                <a href="http://www.qqqunm.com/365bet/">365bet</a>[www.qqqunm.com/365bet/]
+                <a href="http://www.riji888.com/bg/">博狗</a>[www.riji888.com/bg/]
+                <a href="http://www.riji888.com/bgty/">博狗体育</a>[www.riji888.com/bgty/]
+                <a href="http://www.riji888.com/bgyl/">博狗娱乐</a>[www.riji888.com/bgyl/]
+                <a href="http://www.shrimp.org.cn/ttyule/">tt娱乐</a>[www.shrimp.org.cn/ttyule/]
+                <a href="http://www.shrimp.org.cn/laohuji/">老虎机</a>[www.shrimp.org.cn/laohuji/]
+                <a href="http://www.shrimp.org.cn/libo/">立博</a>[www.shrimp.org.cn/libo/]
+            </font>
+        </strong>
+    </div>
+    <script>
+        document.getElementById("t" + "e" + "s" + "i").style.display = 'none';
+    </script>
+    <strong style="font-weight: 400"></strong>
+</body>
+</html>
+
+
+
