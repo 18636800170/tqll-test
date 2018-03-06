@@ -5,6 +5,7 @@ from tqll import create_app
 from tqll.models import db
 
 app = create_app()
+
 manager = Manager(app)
 
 

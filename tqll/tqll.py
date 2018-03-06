@@ -1,6 +1,6 @@
 import logging
-
 import os
+
 from flask import Flask
 from flask_classy import FlaskView
 
@@ -15,7 +15,7 @@ def create_app(config=None):
     app.config.from_object(config)
     # 注册数据库
     db.init_app(app)
-
+    # 注册视图函数
     configure_views(app)
 
     # 设置日志生成格式
